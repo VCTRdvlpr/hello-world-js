@@ -1,11 +1,11 @@
 import './App.css';
+import RouteApp from './components/routes';
 
 function App() {
   return (
-    <div>
-      
-    </div>
-    
+    <div>          
+      <RouteApp/>  
+    </div>    
   );
 }
 

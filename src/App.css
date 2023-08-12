@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #00FF00 #070d12;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #131111;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #00FF00;
+    border-radius: 30px;
+    border: 5px solid #000000;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  ::selection{
+    background-color: #00FF00;
+    color: #090909;
+  }
+  
+  body{
+    background-color: #131111;
+    color: #00FF00;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    width: 99vw;
+    height: 100vh;
+  }
+  
+  h1{
+    padding: 50px;
+    font-size: 3em;
+  }
+  
+  #title-color{
+    background-color: #00FF00;
+    color: #131111;
+    padding: 0 6px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  
+  .main-nav-align{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    gap: 15px;
+    height: 100vh;
+  }
+  
+  .main-nav-align::before {
+    content: "";
+    background-image: url(./img/lateral-menu-background.jpg);
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+  }
+  
+  .mainNavBtnStyle{
+    padding: 1px 10px;  
+    font-family: 'Orbitron', sans-serif;
+    height: 40px;
+    background: none;
+    border: none;
+    color: #ffff;  
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9em;    
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .mainNavBtnStyle:hover{
+    background-color: #4d4c4c;      
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .nav-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;  
+  }
+  
+  .navBtnStyle{
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 1.3em;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 150px;
+    background-color: #090909;
+    color: #ffff;
+    font-family: 'Orbitron', sans-serif;
+    border: 3px solid #00FF00;
+    transition: 0.15s ease-in-out;
+  }
+  
+  .navBtnStyle:hover{
+    color: #090909;
+    background-color: #00FF00;
+    font-weight: bold;  
+    transition: 0.15s ease-in-out;  
+  }
+  
+  .navBtnStyle:active{
+    scale: 1.1;
+  }
+  
+  .content-align{
+    margin-top: 30px;
+  }
+  
+  .content-align p{
+    padding: 15px 22%;
+    text-align:left;
+    word-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+    font-size: 1.3em;
+  }
+  
+  .content-align h2{
+    margin:20px;
+  }
