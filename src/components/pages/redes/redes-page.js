@@ -9,9 +9,9 @@ function RedesPage() {
       setContentVisibleHttp(!contentVisibleHttp)
     }
   
-    const[contentVisibleVeVector, setContentVisibleVector] = useState(false);
+    const[contentVisibleVector, setContentVisibleVector] = useState(false);
     const handleButtonClickVector = () =>{
-      setContentVisibleVector(!contentVisibleVeVector)
+      setContentVisibleVector(!contentVisibleVector)
     }
   
     const[contentVisibleTcp, setContentVisibleTcp] = useState(false);
@@ -54,7 +54,7 @@ function RedesPage() {
             </li>
             <li>
               <ContentBtnComponent title='WWW' onClick={handleButtonClickVector} />
-              {contentVisibleVeVector && 
+              {contentVisibleVector && 
               <div className='content-align'>
                 <h2>O que é?</h2>
                 <p>WWW são as iniciais de World Wide Web (rede de alcance mundial), que é o sistema de documentos de 
