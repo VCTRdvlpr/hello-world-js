@@ -21,15 +21,21 @@
   
   ul{
     list-style: none;
+    text-decoration: none;
   }
-  
+
   ::selection{
     background-color: #00FF00;
     color: #090909;
   }
+
+  a{
+    text-decoration: none;
+  }
   
   body{
-    background-color: #131111;
+    background: rgb(31,36,31);
+    background: radial-gradient(circle, rgba(31,36,31,1) 0%, rgba(13,12,12,1) 100%); 
     color: #00FF00;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
@@ -75,13 +81,11 @@
     height: 100%;
     z-index: -1;  
   }
-  
+
   .mainNavBtnStyle{
     padding: 1px 10px;  
     font-family: 'Orbitron', sans-serif;
-    height: 40px;
-    background: none;
-    border: none;
+    height: 40px;        
     color: #ffff;  
     display: flex;  
     align-items: center;
@@ -91,6 +95,7 @@
     margin-left: 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    
   }
   
   .mainNavBtnStyle:hover{
@@ -98,6 +103,12 @@
     font-weight: bold;
     transition: 0.2s ease-in-out;
   }
+
+  .main-nav-align ul li:first-child{
+    position: fixed;
+    top: 20px;
+    font-size: 1.4em;
+  } 
   
   .nav-align{
     display: flex;
@@ -146,4 +157,65 @@
   
   .content-align h2{
     margin:20px;
+  }
+
+  .responsive-nav-align{
+    display: none;
+  }
+
+  @media(max-width:600px){
+    .main-nav-align{
+      display: none;
+    }
+
+    .main-nav-align::before {      
+      background-image: none;    
+    }      
+
+    .responsive-nav-align{     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;                   
+    }
+   
+    .drop-down-main-btn button{      
+      width: 100vw;     
+      height: 5vh;
+      cursor: pointer;     
+      background-color: #272525; 
+      border: none;
+      color: #00FF00;
+      font-size: 1.5em;
+      transition: 0.25s ease-in-out;
+    }
+
+    .drop-down-main-btn button:hover{
+      background-color: #00FF00;
+      color: #272525;
+      transition: 0.25s ease-in-out;
+    }
+     
+    .responsive-nav-btn{
+      padding: 1px 10px;  
+      font-family: 'Orbitron', sans-serif;
+      height: 40px;        
+      color: #ffff;  
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 0.9em;              
+      border-radius: 45px;
+      border: 2px solid #00FF00;
+      margin: 20px 0;
+      z-index: 1;
+    }
+    
+    .responsive-nav-btn:hover{
+      background-color: #4d4c4c;      
+      font-weight: bold;
+      transition: 0.2s ease-in-out;
+    }
   }
