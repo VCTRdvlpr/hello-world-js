@@ -29,8 +29,8 @@ const MainNavBar = () =>{
                     <li>
                         <Link className="mainNavBtnStyle" to="/banco-de-dados">Banco de Dados</Link>
                     </li>
-                </ul>                
-            </nav>
+                </ul>                                
+            </nav>                      
         </div>
     );
 }

@@ -162,7 +162,12 @@
   .responsive-nav-align{
     display: none;
   }
-
+ 
+  .content-align p span{
+    font-weight: bold;
+    color: #00FF00;
+  }
+ 
   @media(max-width:600px){
     .main-nav-align{
       display: none;
@@ -193,8 +198,9 @@
 
     .drop-down-main-btn button:hover{
       background-color: #00FF00;
-      color: #272525;
+      color: #000000;
       transition: 0.25s ease-in-out;
+      font-weight: bold;
     }
      
     .responsive-nav-btn{
@@ -217,5 +223,10 @@
       background-color: #4d4c4c;      
       font-weight: bold;
       transition: 0.2s ease-in-out;
+    }    
+
+    .content-align p{
+      padding: 15px 10%;      
     }
+    
   }

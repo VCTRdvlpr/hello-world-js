@@ -59,26 +59,28 @@ function RedesPage() {
               {contentVisibleVector && 
               <div className='content-align'>
                 <h2>O que é?</h2>
-                <p>WWW são as iniciais de World Wide Web (rede de alcance mundial), que é o sistema de documentos de 
+                <p>
+                  WWW são as iniciais de World Wide Web (rede de alcance mundial), que é o sistema de documentos de 
                   hipertexto que se encontram ligados entre si e que são acessíveis através da Internet. Através de 
                   um software conhecido sob o nome de navegador, os utilizadores podem visualizar as páginas 
                   electrónicas (que contenham texto, imagens, vídeos e outros conteúdos multimédia) e navegar nas 
-                  mesmas por intermédio de hiperligações. <br /><br />
-  
+                  mesmas por intermédio de hiperligações.
+                </p>
+                <p>  
                   O funcionamento da WWW começa a partir do momento em que um utilizador insere/digita um endereço 
                   (URL) no seu navegador ou se clicar numa ligação de hipertexto que se encontre numa determinada 
                   página electrónica. O navegador inicia então uma série de comunicações para obter os dados da página
-                  solicitada e, por conseguinte, visualizá-la. <br /><br />
-  
+                  solicitada e, por conseguinte, visualizá-la.
+                </p>  
+                <p>  
                   O primeiro passo consiste em converter o nome do servidor da URL num endereço IP, utilizando a base 
                   de dados conhecida pelo nome de DNS. O endereço IP permite contactar o servidor da Web em questão e 
-                  enviar-lhe todos os dados. <br /><br />
-  
+                  enviar-lhe todos os dados. 
+                </p>
+                <p>   
                   Depois, é enviado o protocolo de comunicação HTTP ao servidor, solicitando o acesso ao recurso. Em 
                   primeiro lugar, é solicitado o texto HTML e, depois é analisado pelo navegador, que realiza 
-                  protocolos adicionais para os gráficos e outros arquivos que façam parte da página.
-  
-                  
+                  protocolos adicionais para os gráficos e outros arquivos que façam parte da página.                    
                 </p>
               </div>}
             </li>   
