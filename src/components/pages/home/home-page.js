@@ -1,14 +1,18 @@
 import React from "react";
 import MainNavBar from "../../main-nav-bar";
 import ResponsiveNavBar from "../../responsiveNavBarComponent";
+import HeaderComponent from "../../headerComponent";
+import BannerHomeComponent from "../../bannerHome";
 
 const Home = () =>{
     return(
         <div>
             <div>
-                <MainNavBar/>
+                <HeaderComponent/>
+                <MainNavBar/>                
                 <ResponsiveNavBar/>
-                <h1>Hello <span id='title-color'>world</span> !</h1>  
+                <h1>Hello <span className='title-color'>world</span> !</h1>  
+                <BannerHomeComponent/>
             </div>                     
         </div>
     );

@@ -1,16 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const MainNavBar = () =>{
-
-    
+const MainNavBar = () =>{    
     return(
         <div>
             <nav className='main-nav-align'>      
-                <ul > 
-                    <li>
-                        <Link className="mainNavBtnStyle" to="/">Home</Link>
-                    </li>         
+                <ul>                        
                     <li>
                         <Link className="mainNavBtnStyle" to="/hardware">Hardware</Link>
                     </li>                

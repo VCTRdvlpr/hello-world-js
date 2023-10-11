@@ -2,6 +2,7 @@ import ContentBtnComponent from "../../contentBtnComponent";
 import { useState } from "react";
 import MainNavBar from "../../main-nav-bar";
 import ResponsiveNavBar from "../../responsiveNavBarComponent";
+import HeaderComponent from "../../headerComponent";
 
 function RedesPage() {
 
@@ -27,9 +28,10 @@ function RedesPage() {
   
     return (
       <div>
+        <HeaderComponent/>
         <MainNavBar/>       
         <ResponsiveNavBar/>
-        <h1>Hello <span id='title-color'>world</span> !</h1>                   
+        <h1>Hello <span className='title-color'>world</span> !</h1>                   
         <nav>
           <ul className='nav-align'>
             <li>

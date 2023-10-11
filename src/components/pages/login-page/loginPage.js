@@ -3,15 +3,17 @@ import MainNavBar from "../../main-nav-bar";
 import ResponsiveNavBar from "../../responsiveNavBarComponent";
 import HeaderComponent from "../../headerComponent";
 
-const SistemasOperacionais = () => {
+const LoginPageComponent = () =>{
     return(
         <div>
-            <HeaderComponent/>
             <MainNavBar/>
             <ResponsiveNavBar/>
-            <h1>Hello <span className='title-color'>world</span> !</h1>            
+            <HeaderComponent/>
+            <h1>
+                Página de login
+            </h1>
         </div>
     );
 }
 
-export default SistemasOperacionais;
+export default LoginPageComponent;
