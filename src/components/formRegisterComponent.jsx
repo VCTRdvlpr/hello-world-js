@@ -6,6 +6,7 @@ const FormRegisterComponent = () =>{
     const [formData, setFormData] = useState({
         nome: '',
         idade: '',
+        email: '',
         senha: ''
       });
     
@@ -51,6 +52,18 @@ const FormRegisterComponent = () =>{
                         />
                     </li>
                     <li className="FormRegisterItem">
+                        <label htmlFor="email">
+                            Seu e-mail
+                        </label>
+                        <input
+                            type="email"
+                            placeholder="E-mail"
+                            value={formData.email}
+                            name="email"
+                            onChange={handleChange}
+                        />                     
+                    </li>
+                    <li className="FormRegisterItem">
                         <label htmlFor="senha">
                             Crie uma senha:
                         </label>
@@ -62,7 +75,7 @@ const FormRegisterComponent = () =>{
                             name="senha"
                             autoComplete="off"                                                    
                         />
-                    </li>
+                    </li>                    
                 </ul>
                 <div className="FormRegisterBtnAlign">
                     <button type="submit">

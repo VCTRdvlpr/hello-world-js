@@ -62,7 +62,7 @@
     height: 12vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-around;    
     position: fixed;
     z-index: 1;    
     background: rgb(31,36,31);
@@ -82,21 +82,41 @@
     width: 15vw;
     display: flex;
     justify-content: center;    
-    gap: 20px;
-    margin-right:20px ;
+    align-items: center;
+    gap: 10px;    
   }
-
-  .HeaderBtnStyle{
+ 
+ 
+  .HeaderBtnStyle button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
+    padding-right: 10px;
     color: #ffff;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: pointer;    
+    border-right: 1px solid #00FF00;      
   }
 
-  .HeaderBtnStyle:hover{
+  .HeaderBtnStyle button:hover{
     color: #00FF00;
     transition: 0.25s ease-in-out;
+  }
+
+  .HeaderBtnStyle:first-child button{
+    color: #00FF00;       
+    scale: 1.1;    
+  }
+
+  .HeaderBtnStyle:first-child button:hover{
+    color: #ffff;
+    transition: 0.25s ease-in-out;
+  }
+
+  .HeaderBtnStyle:last-child button{
+    border: none;
   }
 
   .HeaderStyle:hover{
@@ -217,14 +237,15 @@
   }
 
   .BannerImgAlign img{
-    width: 60vw;
+    width: 65vw;
     height: 50vh;
-    border-radius: 45px;
+    border-radius: 10px;
+    margin: auto;
   }
 
   /* FORMULARIO DE CADASTRO */
 
-  .FormRegisterAlign{    
+  .FormRegisterAlign, .LoginPageAlign{    
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -232,14 +253,14 @@
     justify-content: center;    
     gap: 60px;
   }
-  .FormRegisterAlign h2{
+  .FormRegisterAlign h2, .LoginPageAlign h2{
     margin-top: 70px;
     color: #ffff;
     font-size: 1.9em;
     opacity: 0.7;    
   }
 
-  .FormRegisterStyle{    
+  .FormRegisterStyle, .LoginStyle{    
     height: 60vh;
     width: 30vw;
     display: flex;
@@ -249,7 +270,7 @@
     gap: 30px;
   }
 
-  .FormRegisterItem{
+  .FormRegisterItem, .LoginItem{
     display: flex;
     flex-direction: column;
     margin-top: 35px;
@@ -257,7 +278,7 @@
     font-size: 1.3em;    
   }
 
-  .FormRegisterItem input{
+  .FormRegisterItem input, .LoginItem input{
     font-size: 0.8em;  
     padding: 5px;  
     width: 30vw;
@@ -269,23 +290,23 @@
     caret-color: #00FF00;
   }
 
-  .FormRegisterItem input:hover{
+  .FormRegisterItem input:hover, .LoginItem input:hover{
     filter: brightness(1.5);
   }
  
-  .FormRegisterItem input::placeholder{
+  .FormRegisterItem input::placeholder, .LoginItem input::placeholder{
     color: #ffff;
     font-size: 0.8em;
     opacity: 0.5;
   }
 
-  .FormRegisterBtnAlign{
+  .FormRegisterBtnAlign, .LoginBtnAlign{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .FormRegisterBtnAlign button{
+  .FormRegisterBtnAlign button, .LoginBtnAlign button{
     border: none;
     background: none;
     color: #ffff;
@@ -296,17 +317,74 @@
     border-radius: 90px;
   }
 
-  .FormRegisterBtnAlign button:hover{
+  .FormRegisterBtnAlign button:hover, .LoginBtnAlign button:hover{
     background-color: #00FF00;
     color: #000000;
     transition: 0.25s ease-in-out;    
   }
 
-  .FormRegisterBtnAlign button:active{
+  .FormRegisterBtnAlign button:active, .LoginBtnAlign button:active{
     scale: 1.1;
   }
- 
-  @media(max-width:600px){
+
+  .NavHiddenBtnAlign{
+    position: fixed;
+    left: 30vh;
+    top: 0px;
+    height: 100%;      
+  }  
+
+  .NavHiddenBtnAlign button{    
+    height: 100%;
+    padding: 5px;    
+    border: none;
+    color: #00FF00;
+    font-size: 2em;
+    cursor: pointer;  
+    transition: 0.45s ease-in-out;  
+    background-color: #13111100;    
+    background-image: linear-gradient(360deg, #00FF00, rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0px 0px;
+    position:relative;
+  }
+
+  .NavHiddenBtnAlign button:hover{    
+    background-size: 1px 100%;    
+    transition: 0.45s ease-in-out;  
+    color: #ffff;    
+  }
+
+  .NavShowBtnAlign{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+  }
+
+  .NavShowBtnAlign button{    
+    height: 100%;
+    padding: 5px;    
+    padding-left: 10px;
+    border: none;
+    color: #00FF00;
+    font-size: 3em;    
+    cursor: pointer;  
+    transition: 0.25s ease-in-out;  
+    background-color: #13111100;    
+    background-image: linear-gradient(360deg, #00FF00, rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-position: right;    
+    background-size: 1px 100%;
+    position:relative;
+  }
+
+  .NavShowBtnAlign button:hover{                
+    color: #ffff;
+  }
+
+  @media(max-width:1140px){
     .main-nav-align{
       display: none;
     }
@@ -352,7 +430,7 @@
       cursor: pointer;
       font-size: 0.9em;              
       border-radius: 45px;
-      border: 2px solid #00FF00;
+      border-bottom: 1px solid #00FF00;
       margin: 20px 0;
       z-index: 1;
     }
@@ -375,4 +453,7 @@
       width: 80vw;
     }
     
+    .nav-hidden{
+      display: none;
+    }
   }

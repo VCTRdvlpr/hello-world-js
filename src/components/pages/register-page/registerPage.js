@@ -12,7 +12,9 @@ const RegisterPageComponent = () =>{
             <ResponsiveNavBar/>
             <HeaderComponent/>  
             <div className="FormRegisterAlign">    
-                <h2>Informe seus dados</h2>      
+                <h2>
+                    Informe seus dados
+                </h2>      
                 <FormRegisterComponent/>
             </div>
         </div>
