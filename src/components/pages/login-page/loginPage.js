@@ -14,6 +14,9 @@ const LoginPageComponent = () =>{
                 <h2>
                     Página de login
                 </h2>
+                <h3>
+                    Back end em construção !
+                </h3>
                 <LoginComponent/>
             </div>
 

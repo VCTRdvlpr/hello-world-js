@@ -15,6 +15,9 @@ const RegisterPageComponent = () =>{
                 <h2>
                     Informe seus dados
                 </h2>      
+                <h3>
+                    Back end em construção !
+                </h3>
                 <FormRegisterComponent/>
             </div>
         </div>

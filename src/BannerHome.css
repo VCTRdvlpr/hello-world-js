@@ -1,0 +1,4 @@
+.fade{
+    transition: 1s ease-in-out;
+    background-color: greenyellow;
+}
